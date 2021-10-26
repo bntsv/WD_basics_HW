@@ -1,0 +1,76 @@
+html, body{
+    min-height: 100vh;
+}
+html{
+    border: solid 5px white;
+}
+body{
+    background-image: url("../images/raven-1002849_1280.jpg");
+    background-size: 100% 100%;
+    background-position: center center; 
+    background-repeat: no-repeat;
+    border-top: 15px solid #b0893b;
+    border-left: 15px solid #b0893b;
+    border-right: 15px solid #5c471e;
+    border-bottom: 15px solid #5c471e;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.author, .poem>p, .title{
+    width: 50%;
+}
+.author{
+    color: #f3c76c;
+    text-align: center;
+    font-size: 24px;
+    line-height: 50px;
+    height: 50px;
+    vertical-align: middle;
+}
+.title{
+    color: rgb(20%, 20%, 20%);
+    text-align: center;
+    font-size: 14px;
+    font-style: italic;
+    font-family: Tahoma, Verdana, Geneva, sans-serif;
+    font-variant: small-caps;
+    margin-bottom: 10px;      
+}
+.poem>p{
+    color: white;
+    opacity: 0.75;
+    font-size: 11px;
+    padding-top: 10px;
+    text-indent: 30px;
+    line-height: 18px;
+}
+.italic{
+    font-style: italic;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+}
+.uline{
+    text-decoration: 2px orange underline;
+}
+.poem{
+    padding-bottom: 30px;
+    border-bottom: 2px solid #b0893b ;
+    margin-bottom: 4px;
+    margin-left: 0px;
+}
+.source{
+    margin: 0px;
+    border-top: 2px solid #b0893b ;
+    width: 100%;
+}
+.source>p{
+    color: #f3c76c;
+    font-size: 12px;
+    font-family: serif;
+}
+.source>p+p{
+    color: black;
+    line-height: 50px;
+    height: 50px;
+    vertical-align: middle;
+}

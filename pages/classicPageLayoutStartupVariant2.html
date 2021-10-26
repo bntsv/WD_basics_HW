@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Page Layout Startup</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" />
+    <style>
+        body{
+            margin: 0;
+            height: 100%;
+            background-color: hsl(0, 100%, 83%);
+            font-size: 2em;
+            color: seashell;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        #header, #footer{
+            background-color: hsl(175, 40%, 70%);
+            height: 10vh;
+            line-height: 10vh;
+            margin: 5%;
+        }
+        #aside{
+            display: inline-block;
+            float: left;
+            width: 30%;
+            margin-left: 5%;
+            background-color: hsl(175, 40%, 50%);
+            height: 70vh;
+            line-height: 70vh;
+        }
+        #article{
+            position: relative;
+            display: inline-block;
+            background-color: hsl(0, 100%, 73%);
+            height: 70vh;
+            line-height: 70vh;
+            width: 55%;
+        }
+        .img{
+            display: inline-block;
+            background-color: hsl(0, 0%, 85%);
+            width: 30%;
+            height: 25vh;
+            line-height: 25vh;
+        }
+        .pics{
+            /* box-sizing: border-box; 
+            border: 5px solid red; */
+            line-height: initial;
+            width: 100%;
+            position: absolute;
+            top: 55%;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">Header</header>
+    <aside id="aside">Aside</aside>
+    <article id="article">Article
+        <div class="pics">
+            <div class="img">Image</div>
+            <div class="img">Image</div>
+            <div class="img">Image</div>
+        </div>
+    </article>
+    <footer id="footer">Footer</footer>
+
+
+    <!-- <header id="header">Header</header>
+    <aside id="aside">Aside</aside>
+    <article id="article">Article
+            <div class="img">Image</div>
+            <div class="img">Image</div>
+            <div class="img">Image</div>
+    </article>
+    <footer id="footer">Footer</footer> -->
+
+    
+</body>
+</html>

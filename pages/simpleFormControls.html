@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Boris Netsov">
+    <title>Simple Form Controls</title>
+    <link rel="icon" href="../images/icons/formicon.svg">
+</head>
+<body>
+    <a href="../index.html" title="back to index"><i><b>index</b></i></a>
+    <h2><strong>Регистрация</strong></h2>
+    <form action="./cgi-bin/registration.py" method="GET">
+        <fieldset>
+            <legend>Лични данни</legend>
+            <label for="userName">Име:</label>
+            <input type="text" name="userName" id="userName" placeholder="малко име, на латиница" autofocus><br>
+            <label for="userSurName">Име:</label>
+            <input type="text" name="userSurName" id="userSurName" placeholder="фамилия, на латиница"><br>
+            Пол:
+            <label>
+                мъж:
+                <input type="radio" name="gender" value="m">
+            </label>
+            <label>
+                жена:
+                <input type="radio" name="gender" value="f">
+            </label>
+        </fieldset>
+        <label>
+            Коментар:<br>
+            <textarea name="comment" rows="2" cols="20" placeholder="напишете ни нещо"></textarea>
+        </label>
+        <br>
+        <button type="submit">Изпрати</button>
+        <!-- http://127.0.0.1:5500/HW/pages/cgi-bin/registration.py?userName=Iva&userSurName=Popova&gender=f&comment=Your+site+is+awesome%21 -->
+    </form>
+</body>
+</html>

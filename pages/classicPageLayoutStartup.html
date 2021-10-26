@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Page Layout Startup</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" />
+    <style>
+        html{
+            background-color: white;
+        }
+        body, html{
+            height: 100%;
+        }
+        body{
+            background-color: hsl(0, 100%, 83%);
+            font-size: 2em;
+            color: seashell;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        #header, #footer{
+            position: relative;
+            background-color: hsl(175, 40%, 70%);
+            height: 13%;
+            margin: 1%;
+        }
+        #aside{
+            position: relative;
+            display: inline-block;
+            float: left;
+            width: 27%;
+            margin: 0 0 0 1%;
+            background-color: hsl(175, 40%, 50%);
+            height: 70%;
+        }
+        #article{
+            position: relative;
+            display: inline-block;
+            background-color: hsl(0, 100%, 73%);
+            height: 70%;
+            width: 70%;
+        }
+        .img{
+            position: relative;
+            display: inline-block;
+            background-color: hsl(0, 0%, 85%);
+            width: 30%;
+            height: 25vh;
+        }
+        .pics{
+            /* box-sizing: border-box; 
+            border: 5px solid red; */
+            width: 100%;
+            position: absolute;
+            top: 55%;
+        }
+        .content{
+            /* box-sizing: border-box; 
+            border: 5px solid red; */
+            position: absolute;
+            width: 8em;
+            height: 2em;
+            top: 50%;
+            left: 50%;
+            margin-top: -1em;
+            margin-left: -4em;
+            line-height: 2em;
+        }
+        a:link, a:visited{
+            color: seashell;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header id="header"><div class="content">Header</div></header>
+    <aside id="aside"><div class="content">Aside</div></aside>
+    <article id="article"><div class="content">Article</div>
+        <div class="pics">
+            <div class="img"><div class="content">Image</div></div>
+            <div class="img"><div class="content">Image</div></div>
+            <div class="img"><div class="content">Image</div></div>
+        </div>
+    </article>
+    <footer id="footer">
+        <div class="content">
+            <a href="../index.html" title="back to index"><i><b>index</b></i></a>
+        </div>
+    </footer>
+
+
+    <!-- <header id="header">Header</header>
+    <aside id="aside">Aside</aside>
+    <article id="article">Article
+            <div class="img">Image</div>
+            <div class="img">Image</div>
+            <div class="img">Image</div>
+    </article>
+    <footer id="footer">Footer</footer> -->
+
+    
+</body>
+</html>

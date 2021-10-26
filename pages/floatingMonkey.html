@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Boris Netsov">
+    <link rel="icon" href="../images/icons/monkeyicon.svg">
+    <title>Floating Monkey</title>
+    <style>
+        html, body{
+            height: 100%;
+            background-color: pink;
+            /* background-color: rgb(0, 0, 50); */
+        }
+        /* .text-shadow{
+            font-size: 5em;
+            text-shadow: 3px 3px 6px red;
+            color: seashell;
+        }  */
+        /* .text{
+            text-indent: 0.15em;
+            position:fixed;
+            top: 50%;
+            left: 50%;
+            margin-top: -50px;
+            margin-left: -50px;
+            border-radius: 100%;
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            vertical-align: middle;
+            font-size: 5em;
+            animation: textFloat 2.5s infinite;
+            animation-timing-function: linear;
+        } */
+        .box-shadow::before{
+            content: "";
+            display: block;
+            box-shadow: 0px 0px 50px 10px azure;
+        }
+        .box-shadow::before, .box-shadow{
+            position:fixed;
+            top: 50%;
+            left: 50%;
+            margin-top: -100px;
+            margin-left: -100px;
+            border-radius: 100%;
+            width: 200px;
+            height: 200px;
+        }
+        .box-shadow{
+            text-align: center;
+            font-size: 150px;
+            background-color: rgb(240, 255, 255);
+            animation: textFloat 2.5s infinite;
+            animation-timing-function: ease;
+        }
+        @keyframes textFloat {
+            0%{
+                font-size: 150px;
+                box-shadow: 0px 0px 100px 120px azure;
+            }
+            10%{
+                font-size: 148px;
+                box-shadow: 0px 0px 100px 115px azure;
+            }
+            20%{
+                font-size: 146px;
+                box-shadow: 0px 0px 100px 110px azure;
+            }
+            30%{
+                font-size: 144px;
+                box-shadow: 0px 0px 100px 105px azure;
+            }
+            40%{
+                font-size: 142px;
+                box-shadow: 0px 0px 100px 100px azure;
+            }
+            50%{
+                font-size: 140px;
+                box-shadow: 0px 0px 100px 90px azure;
+            }
+            60%{
+                font-size: 142px;
+                box-shadow: 0px 0px 100px 100px azure;
+            }
+            70%{
+                font-size: 144px;
+                box-shadow: 0px 0px 100px 105px azure;
+            }
+            80%{
+                font-size: 146px;
+                box-shadow: 0px 0px 100px 110px azure;
+            }
+            90%{
+                font-size: 148px;
+                box-shadow: 0px 0px 100px 115px azure;
+            }
+            100%{
+                font-size: 150px;
+                box-shadow: 0px 0px 100px 120px azure;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box-shadow">@</div>
+    <!-- <div class="text-shadow">A</div> -->
+    <!-- <div class="text">@</div> -->
+</body>
+</html>

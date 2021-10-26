@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotate Animation</title>
+    <link rel="icon" href="../images/icons/rotateicon.svg">
+    <style>
+        html, body{
+            height: 100%;
+            margin: 0;
+        }
+        .ani{
+            width: 1.2em;
+            height: 20em;
+            background-image: linear-gradient(to top, red, yellow);
+            border-bottom-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+            position: relative;
+            left: 50%;
+            top: 25%;
+            transform: rotate(0deg);
+            transform-origin: bottom center;
+            /* transition: 1s; */
+            animation: shapeRotate 5s infinite;
+        }
+        @keyframes shapeRotate {
+            0%{
+                transform: rotate(0deg);
+            }
+            25%{
+                transform: rotate(90deg);
+            }
+            50%{
+                transform: rotate(-90deg);
+            }
+            100%{
+                transform: rotate(0deg);
+            }
+        }
+        /* .ani:hover{
+            transform: rotate(90deg);
+            background-image: linear-gradient(to bottom, red, yellow);
+        } */
+    </style>
+</head>
+<body>
+    <div class="ani"></div>
+</body>
+</html>

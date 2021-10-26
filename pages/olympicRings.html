@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olympic Rings</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" />
+    <style>
+        body, html{
+            min-height: 100vh;
+        }
+        body{
+            background-image: url(../images/ocean-through-window-frame.jpg);
+            background-size: 100% 100%;
+            background-position: center center; 
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        .style{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            box-sizing: border-box;
+            border-radius: 100%;
+            text-align: center;
+            width: 8em;
+            height: 8em;
+            line-height: 7em;
+            opacity: 0.5;
+        }
+        .europe{
+            margin-top: -4em;
+            margin-left: -12em;
+            border: 0.5em solid blue;
+        }
+        .america{
+            margin-top: -4em;
+            margin-left: 4em;
+            border: 0.5em solid black;
+        }
+        .asia{
+            margin-top: 0;
+            margin-left: -8em;
+            border: 0.5em solid green;
+        } 
+        .australia{
+            margin-top: 0;
+            margin-left: 0em;
+            border: 0.5em solid red;
+        }
+        .africa{
+            margin-top: -4em;
+            margin-left: -4em;
+            border: 0.5em solid yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="style europe">Europe</div>
+    <div class="style asia">Asia</div>
+    <div class="style africa">Africa</div>
+    <div class="style australia">Australia</div>
+    <div class="style america">America</div>
+</body>
+</html>

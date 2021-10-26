@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Greeting</title>
+    <script>
+            function greetings() {
+            // DO NOT CHANGE
+            // взимаме въведената от потребителя стойност за град:
+            var userTown = document.getElementById("town").value;
+            //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+            // Task 1: Изпишете в конзолата съдържанието на променливата userTown
+            
+            //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+            // Task 2:
+            // ако потребителят е избрал 'София', то да се изпише в конзолата:
+            // "Здравей!"
+            // ако потребителят е избрал 'Париж', то да се изпише в конзолата:
+            // "Salut!"
+            // ако потребителят е избрал 'Лондон', то да се изпише в конзолата:
+            // "Hi!"
+
+            console.log("Град: " + userTown);
+
+            if(userTown === 'София'){
+                console.log("Здравей!");
+            }else if(userTown === 'Париж'){
+                console.log("Salut!");
+            }else{
+                console.log("Hi!");
+            }
+            
+            //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+            // DO NOT CHANGE
+            // внимавайте, да не изтриете затварящата '}' фигурна скоба по-долу :)
+        }
+
+    </script>
+</head>
+<body>
+    <label for="town">От къде сте?</label>
+    <select id="town" name="town">	
+        <option value="София">София</option>
+        <option value="Париж">Париж</option>
+        <option value="Лондон">Лондон</option>
+    </select>
+    <button onclick="greetings();">ОК</button>
+</body>
+</html>

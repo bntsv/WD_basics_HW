@@ -1,0 +1,25 @@
+.aph{
+    padding-bottom: 20px;
+    padding-top: 10px; 
+}
+h1, p{
+    width: 800px;
+}
+h1{
+    color: rgb(50%,50%,50%);
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 20px; 
+}
+p{
+    padding: 20px;
+}
+.dark{
+    color: #DDD;
+    background-color: #41484E;
+}
+.dark+p{
+    color: #EEE;
+    background-color: #5E6F7D;
+}

@@ -1,0 +1,65 @@
+html, body{
+    margin: 0;
+}
+.happy, .sad{
+    width: 100%;
+    height: 100vh;
+}
+.happy div, .sad div, .face{
+    border-radius: 100%;
+}
+.happy{
+    background-color: greenyellow;
+}
+.sad{
+    background-color: indianred; 
+}
+.face{
+    width: 12em;
+    height: 12em;
+    margin-left: -6em;
+    margin-top: -6em;
+    border: 0.12em solid black;
+    background-color: yellow;
+    position: fixed;
+    top: 50%;
+    left: 50%;  
+}
+.hmouth, .smouth, .heyes, .seyes{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.hmouth, .smouth{
+    width: 8em;
+    height: 8em;
+    margin-left: -4em;
+    margin-top: -4em;
+    border-bottom: 0.12em solid black;
+    border-top: 0.12em solid #ffffff00;
+    border-left: 0.12em solid #ffffff00;
+    border-right: 0.12em solid #ffffff00;
+}
+.smouth{
+    border-top: 0.12em solid black;
+    border-bottom: 0.12em solid #ffffff00;
+    /* top: 163%; */
+    transform: translate(0,100vh);
+    margin-top: 2em;
+}
+.heyes, .seyes, .heyes>div, .seyes>div{
+    width: 0.6em;
+    height: 1.2em;
+    background-color: black;
+}
+.heyes, .seyes{
+    margin-left: -0.3em;
+    margin-top: -0.6em;
+    transform: translate(1.5em,-1.5em); 
+}
+.seyes{
+    top: 150%;
+}
+.heye2, .seye2{
+    transform: translate(-3em);
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floating Images</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" /> -->
+    <style>
+        h2, .left, .right{
+            margin: 0.5em;
+            font-size: 2.5em;
+            font-family: serif;
+        }
+        .left, .right{
+            background-color: lightgrey;
+            border: 3px solid orange;
+            width: 70%;
+        }
+        .left>img, .right>img{
+            display: inline-block;
+            width: 50%;
+            margin: 0.5em;
+        }
+        .left>img{
+            float: left;
+        }
+        .right>img{
+            float: right;
+        }
+
+        /* .left>p::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .right>p::after{
+            content: "";
+            display: block;
+            clear: both;
+        } */
+    </style>
+</head>
+<body>
+    <h2><a href="../index.html" title="back to index"><i><b>index</b></i></a></h2>
+    <div class="left">
+        <img src="https://drive.google.com/uc?export=view&id=0B78rPN4WCkJEODR0aEo1dklCMUk" alt="Trees in Sandanski">
+        <p>Lorem ipsum dolor sit amet, eget enim libero et orci erat, odio diam vel lacus est nonummy ullamcorper, aliquet cras diam vitae bibendum condimentum. Condimentum aliquam sodales est interdum vitae consectetuer, sed orci tristique ut, sed pede, porta tellus etiam. Vel dui consequat cras. Non turpis. Tortor in. Sit fusce accumsan blandit, vel lectus commodo.</p>
+    </div>
+    <div class="right">
+        <img src="https://drive.google.com/uc?export=view&id=0B78rPN4WCkJES3NlWlBSSEZTVTg" >
+        <p>Lorem ipsum dolor sit amet, eget enim libero et orci erat, odio diam vel lacus est nonummy ullamcorper, aliquet cras diam vitae bibendum condimentum. Condimentum aliquam sodales est interdum vitae consectetuer, sed orci tristique ut, sed pede, porta tellus etiam. Vel dui consequat cras. Non turpis. Tortor in. Sit fusce accumsan blandit, vel lectus commodo.</p>
+    </div>
+    <div class="left">
+        <img src="https://drive.google.com/uc?export=view&id=0B78rPN4WCkJEN2lwN0RhRmJuU28" alt="Trees in Sandanski">
+        <p>Lorem ipsum dolor sit amet, eget enim libero et orci erat, odio diam vel lacus est nonummy ullamcorper, aliquet cras diam vitae bibendum condimentum. Condimentum aliquam sodales est interdum vitae consectetuer, sed orci tristique ut, sed pede, porta tellus etiam. Vel dui consequat cras. Non turpis. Tortor in. Sit fusce accumsan blandit, vel lectus commodo.</p>
+    </div>
+    <div class="right">
+        <img src="https://drive.google.com/uc?export=view&id=0B78rPN4WCkJEdmxsMldSVWJPZHc" alt="Trees in Sandanski">
+        <p>Lorem ipsum dolor sit amet, eget enim libero et orci erat, odio diam vel lacus est nonummy ullamcorper, aliquet cras diam vitae bibendum condimentum. Condimentum aliquam sodales est interdum vitae consectetuer, sed orci tristique ut, sed pede, porta tellus etiam. Vel dui consequat cras. Non turpis. Tortor in. Sit fusce accumsan blandit, vel lectus commodo.</p>
+    </div>
+</body>
+</html>
